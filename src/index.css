@@ -49,6 +49,32 @@ ul {
   font-family: var(--font-serif);
 }
 
+h1.title-font {
+        font-size: clamp(2.6rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    color: #fff;
+        margin-bottom: 20px;
+
+}
+
+h1.title-font span {
+    color: #c4ab5b;
+    border-bottom: 4px solid #c4ab5b;
+    padding-bottom: 2px;
+}
+
+h2.title-font {
+    font-size: clamp(2rem, 4vw, 3rem);
+    opacity: 1;
+    transform: none;
+    color: #fff;
+}
+
+h2.title-font span {
+        color: #c4ab5b;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 28px;
