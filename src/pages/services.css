@@ -1,0 +1,134 @@
+.service-banner{
+background:url("../../public/hans-street-cleaning-188997_1920.jpg") center/cover no-repeat;
+padding: 200px 0 120px 0;
+position:relative;
+border-bottom:4px solid #c4ab5b;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to right,rgba(0,0,0,0.88) 55%,rgba(0,0,0,0.66));
+}
+
+.service-banner-inner{
+position:relative;
+z-index:2;
+display:flex;
+flex-direction:column;
+gap:20px;
+text-align:center;
+}
+
+.service-banner-top{
+border:1px solid #c4ab5b;
+border-radius:100px;
+padding:6px 18px;
+font-size:.8rem;
+font-weight:600;
+letter-spacing:2px;
+color:#c4ab5b;
+width:fit-content;
+margin:auto;
+}
+
+.title-font{
+font-family:'Playfair Display',serif;
+}
+
+h1.title-font {
+        font-size: clamp(2.6rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    color: #fff;
+        margin-bottom: 20px;
+
+}
+
+h1.title-font span {
+    color: #c4ab5b;
+    border-bottom: 4px solid #c4ab5b;
+    padding-bottom: 2px;
+}
+
+.banner-buttons{
+display:flex;
+gap:16px;
+justify-content:center;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+.services-section{
+background:#07070a;
+}
+
+.services-row{
+text-align:center;
+display:flex;
+flex-direction:column;
+gap:20px;
+margin-bottom:60px;
+}
+
+.services-item-col{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+}
+
+.services-item-box{
+background:#0d0d0d;
+border:1px solid rgba(196,171,91,0.12);
+border-radius:12px;
+padding:24px;
+display:flex;
+flex-direction:column;
+gap:16px;
+transition:all .3s ease;
+}
+
+.services-item-box:hover{
+transform:translateY(-5px);
+border-color:#c4ab5b;
+}
+
+.services-image-box{
+background:#c8a05133;
+padding:10px 12px;
+border-radius:10px;
+width:fit-content;
+color:#c4ab5b;
+}
+
+.services-link{
+color:#c4ab5b;
+display:flex;
+gap:6px;
+align-items:center;
+font-size:.9rem;
+text-decoration:none;
+}
+
+h2.title-font {
+        font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 20px;
+    opacity: 1;
+    transform: none;
+    color: #fff;
+}
+
+h2.title-font span {
+        color: #c4ab5b;
+}
+
+.section-subheading {
+    color: #c4ab5b;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: block;
+    opacity: 1;
+    transform: none;
+}

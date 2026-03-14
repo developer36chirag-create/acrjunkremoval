@@ -58,15 +58,36 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav style={{ display: 'flex', alignItems: 'center', gap: '35px' }} className="desktop-nav">
           <Link to="/" style={{ fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>Home</Link>
-          
+
           <div 
             style={{ position: 'relative' }}
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', color: isDropdownOpen ? 'var(--color-primary)' : 'inherit', transition: 'color 0.3s' }}>
-              Services <ChevronDown size={14} style={{ transform: isDropdownOpen ? 'rotate(180deg)' : 'rotate(0)', transition: 'transform 0.3s' }} />
-            </div>
+            <Link
+  to="/services"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '5px',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    fontWeight: 600,
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    color: isDropdownOpen ? 'var(--color-primary)' : 'inherit',
+    transition: 'color 0.3s'
+  }}
+>
+  Services
+  <ChevronDown
+    size={14}
+    style={{
+      transform: isDropdownOpen ? 'rotate(180deg)' : 'rotate(0)',
+      transition: 'transform 0.3s'
+    }}
+  />
+</Link>
             
             <AnimatePresence>
               {isDropdownOpen && (
@@ -175,14 +196,21 @@ const Header = () => {
               padding: '100px 30px 40px',
               display: 'flex',
               flexDirection: 'column',
-              overflowY: 'auto'
+              overflowY: 'auto',
+              height: "100vh"
             }}
           >
             <div style={{ display: 'flex', flexDirection: 'column', gap: '25px', fontSize: '1.2rem' }}>
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
               
               <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '15px' }}>
-                <span style={{ color: 'var(--color-primary)', marginBottom: '15px', display: 'block' }}>Services</span>
+                <Link
+  to="/services"
+  style={{ color: 'var(--color-primary)', marginBottom: '15px', display: 'block' }}
+  onClick={() => setIsMobileMenuOpen(false)}
+>
+  Services
+</Link>
                 <ul style={{ display: 'flex', flexDirection: 'column', gap: '15px', paddingLeft: '15px', fontSize: '1rem', color: 'var(--color-text-muted)' }}>
                   {services.map((s, i) => (
                     <li key={i}><Link to={s.path} onClick={() => setIsMobileMenuOpen(false)}>{s.name}</Link></li>
