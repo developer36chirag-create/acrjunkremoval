@@ -114,4 +114,20 @@ ul {
   .section {
   padding: 60px 0;
 }
+
+footer {
+  padding-top: 60px !important;
 }
+
+}
+
+
+@media only screen and (max-width:577px) {
+  .btn {
+        width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+

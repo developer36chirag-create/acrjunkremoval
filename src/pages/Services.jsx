@@ -90,11 +90,20 @@ export default function Services() {
             transition={{delay:0.6}}
             className="banner-buttons"
           >
-            <a href="tel:+16195551234" className="btn">
+            <a href="tel:+16195551234" className="btn" style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    padding: "16px 36px",
+    fontSize: "1rem"
+  }}>
               <Phone size={18}/> Call For A Free Quote
             </a>
 
-            <a href="#services" className="btn btn-outline">
+            <a href="#services" className="btn btn-outline" style={{
+    padding: "16px 36px",
+    fontSize: "1rem"
+  }}>
               Our Services
             </a>
           </motion.div>
@@ -117,7 +126,7 @@ export default function Services() {
           >
             <span className="section-subheading">What We Do</span>
 
-            <h2 className="title-font">
+            <h2 className="title-font w-80">
               San Diego's Trusted, Eco-Friendly <span>Junk Removal Team</span>
             </h2>
 
